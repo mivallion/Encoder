@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Encoder",
-    version="1.0",
+    version="1.1",
     author="Viktor Sevastyanov",
     author_email="mivallion@example.com",
     description="Encoder library for Raspberry Pi for measuring quadrature encoded signals.",

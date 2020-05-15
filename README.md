@@ -13,18 +13,18 @@ $ pip install Encoder
 
 To use it, you need to connect pins A and B and GND of the rotary encoder to two pins and GND of the Raspberry Pi, for example 24 and 10. Then just use it:
 ```python
-from Encoder import Encoder
+import Encoder
 
-enc = Encoder(24, 10)
+enc = Encoder.Encoder(24, 10)
 enc.read()
 ```
 
 You can use two or more rotary encoders:
 ```python
-from Encoder import Encoder
+import Encoder
 
-enc_1 = Encoder(24, 10)
-enc_2 = Encoder(25, 9)
+enc_1 = Encoder.Encoder(24, 10)
+enc_2 = Encoder.Encoder(25, 9)
 ```
 
 ### Note
