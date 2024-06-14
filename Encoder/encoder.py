@@ -36,8 +36,12 @@ class Encoder(object):
     update() calling every time when value on A or B pins changes.
     It updates the current position based on previous and current states
     of the rotary encoder.
+
+    Channel is an optional parameter that is used by some GPIO libraries
+    to specify which channel triggered the event. It is not used in this
+    library, but it is still required in the function definition.
     """
-    def __update(self):
+    def __update(self, channel=None):
         state = self.state & 3
         if GPIO.input(self.A):
             state |= 4
